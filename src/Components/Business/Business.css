@@ -1,0 +1,35 @@
+.business {
+    width: 250px;
+    margin-bottom: 1rem;
+}
+
+.business img {
+    width: 100%;
+}
+
+.business .businessName {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.business .leftAlign {
+    text-align: left;
+}
+
+.business .rightAlign {
+    text-align: right;
+}
+
+.business> :first-child {
+    height: 250px;
+    overflow: hidden;
+}
+
+.business> :last-child {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
