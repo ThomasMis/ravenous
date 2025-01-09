@@ -2,15 +2,10 @@ import React from "react";
 import Business from "../Business/Business.js";
 import "./BusinessList.css";
 
-function BusinessList() {
+function BusinessList(props) {
     return (
         <div className="businessList">
-            <Business />
-            <Business />
-            <Business />
-            <Business />
-            <Business />
-            <Business />
+            {props.businesses.map(business => <Business business={business}/>)}
         </div>
     );
 }
